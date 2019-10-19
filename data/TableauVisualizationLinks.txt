@@ -1,0 +1,30 @@
+ Links to Tableau Public Visualizations:
+
+ * Updates continuously when data is added to the data source (Excel File)
+ * Tableau Visualizations are on the cloud and embedded in our web app
+ * For community-level access, big-picture visualizations allow easy
+ comparison at the stategy-level for each performance metric
+ * For internal-level access, visualizations are broken down by programs to
+ allow easy comparison at the program-level for each performance metric
+
+ Performance Metrics by Strategies (external)
+ Ready Children:
+ https://public.tableau.com/profile/helena.wu#!/vizhome/Performance_Metrics_by_Strategies_Ready_Children/Sheet1?publish=yes
+
+ Successful Students:
+ https://public.tableau.com/profile/helena.wu#!/vizhome/Performance_Metrics_by_Strategies_Successful_Students/Sheet1?publish=yes
+
+ Strong Individuals:
+ https://public.tableau.com/profile/helena.wu#!/vizhome/Performance_Metrics_by_Program_Strong_Individuals/Sheet1?publish=yes
+
+
+ Performance Metrics by Programs (internal)
+ Ready Children:
+ https://public.tableau.com/profile/helena.wu#!/vizhome/Performance_Metrics_by_Program_Ready_Children/Sheet1?publish=yes
+
+ Successful Students:
+ https://public.tableau.com/profile/helena.wu#!/vizhome/Performance_Metrics_by_Program_Successful_Students/Sheet1?publish=yes
+
+ Strong Individuals:
+ https://public.tableau.com/profile/helena.wu#!/vizhome/Performance_Metrics_by_Program_Strong_Individuals/Sheet1?publish=yes
+
