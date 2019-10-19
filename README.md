@@ -3,9 +3,13 @@
 ## Names
 
 Clara Ho
+<br>
 Helena Wu
+<br>
 Gideon Akilas
+<br>
 Hera Memon
+<br>
 Vyas Ramankulangara
 
 ## Challenge Statement
