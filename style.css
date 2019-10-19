@@ -7,5 +7,20 @@ section {
 }
 
 .card-group .card {
-    
+  height: 100%;
+  text-align: center;
 }
+
+.card-group .card .card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  margin: 10% 0;
+  min-height: 200px;
+  align-items: center;
+}
+
+
