@@ -17,6 +17,9 @@
             <img src="https://www.unitedwaysatx.org/wp-content/uploads/united-way-sa-logo-white.png" height="75px"
                 width="125px">
         </a>
+        <button class="btn btn-success btn-lg ">
+            <a href="/" onclick="signOut();">Sign out</a>
+        </button>
     </nav>
     <section class="indexSection">
         <div class="card-group">
@@ -59,6 +62,14 @@
             </div>
         </div>
     </section>
+    <script>
+        function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                window.location.href = '/';
+            });
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
