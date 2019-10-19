@@ -8,6 +8,8 @@
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="487862663990-ikhuuf9ogmpmpkg15qqh1kk8q8lp9b8j.apps.googleusercontent.com">
   <title>Test</title>
 </head>
 
@@ -17,7 +19,8 @@
       <img src="https://www.unitedwaysatx.org/wp-content/uploads/united-way-sa-logo-white.png" height="75px"
         width="125px">
     </a>
-    <form class="form-inline">
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <form class="form-inline" action="auth/google" method="GET">
       <button class="btn btn-success btn-lg my-2 my-sm-0" type="submit">
         Login
       </button>
@@ -72,6 +75,15 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+    <script>
+    function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+</script>
 </body>
 
 </html>
