@@ -8,53 +8,60 @@
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="487862663990-ikhuuf9ogmpmpkg15qqh1kk8q8lp9b8j.apps.googleusercontent.com">
   <title>Test</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-light bg-primary">
+  <nav class="navbar navbar-light">
     <a class="navbar-brand" href="../index.html">
       <img src="https://www.unitedwaysatx.org/wp-content/uploads/united-way-sa-logo-white.png" height="75px"
         width="125px">
     </a>
-    <form class="form-inline">
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <form class="form-inline" action="auth/google" method="GET">
       <button class="btn btn-success btn-lg my-2 my-sm-0" type="submit">
         Login
       </button>
     </form>
   </nav>
-  <section>
+  <section class="indexSection">
     <div class="card-group">
       <div class="card" id="firstPage">
-        <div class="card-body">
-          <h5 class="card-title">Successful Students</h5>
+        <div class="card-body" id="card1">
+          <h1 class="card-title">Successful Students</h1>
           <p class="card-text">
-            This is a wider card with supporting text below as a natural
-            lead-in to additional content. This content is a little bit
-            longer.
+            Ensures all individuals and families reach their full potential and maintain a quality of life free of
+            discrimination.
           </p>
-          <a href="./pages/first.html">View More</a>
+          <button class="btn btn-success btn-lg my-2 my-sm-0">
+            <a href="./pages/first.html">View More</a></button>
         </div>
       </div>
       <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Ready Children</h5>
+        <div class="card-body" id="card2">
+          <h1 class="card-title">Ready Children</h1>
           <p class="card-text">
-            This card has supporting text below as a natural lead-in to
-            additional content.
+            Ensures all children are well prepared before entering kindergarten so that they can be successful in
+            school.
           </p>
-          <a href="./pages/second.html">View More</a>
+          <button class="btn btn-success btn-lg my-2 my-sm-0">
+            <a href="./pages/second.html">View More</a>
+          </button>
+
         </div>
       </div>
       <div class="card" id="thirdPage">
-        <div class="card-body">
-          <h5 class="card-title">Strong Individuals & Families</h5>
+        <div class="card-body" id="card3">
+          <h1 class="card-title">Strong Individuals & Families</h1>
           <p class="card-text">
             This is a wider card with supporting text below as a natural
             lead-in to additional content. This card has even longer content
             than the first to show that equal height action.
           </p>
-          <a href="./pages/third.html">View More</a>
+          <button class="btn btn-success btn-lg my-2 my-sm-0">
+            <a href="./pages/third.html">View More</a></button>
         </div>
       </div>
     </div>
@@ -68,6 +75,15 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+    <script>
+    function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+</script>
 </body>
 
 </html>
