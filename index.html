@@ -20,7 +20,11 @@
       <img src="https://www.unitedwaysatx.org/wp-content/uploads/united-way-sa-logo-white.png" height="75px"
         width="125px">
     </a>
+<<<<<<< Updated upstream
 
+=======
+    <div class="g-signin2" id="gsign" data-onsuccess="onSignIn"></div>
+>>>>>>> Stashed changes
     <form class="form-inline" action="auth/google" method="GET">
 
       <div class="g-signin2 my-2 my-sm-0" data-onsuccess="onSignIn"></div>
@@ -78,6 +82,7 @@
     crossorigin="anonymous"></script>
   <script>
     function onSignIn(googleUser) {
+<<<<<<< Updated upstream
       var profile = googleUser.getBasicProfile();
       console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
       console.log('Name: ' + profile.getName());
@@ -85,6 +90,21 @@
       console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
     }
   </script>
+=======
+  var profile = googleUser.getBasicProfile();
+  let id = document.getElementById("gsign");
+  if(id){
+    id.style.display === "none";
+  }else{
+    
+  }
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+</script>
+>>>>>>> Stashed changes
 </body>
 
 </html>
