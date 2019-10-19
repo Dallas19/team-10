@@ -1,5 +1,12 @@
+.navbar {
+  background-color: #0f4876;
+}
+
 section {
-  height: calc(100vh - 55px);
+  margin-top: 0em;
+}
+.indexSection {
+  height: calc(100vh - 101.5px);
 }
 
 .card-group {
@@ -22,5 +29,56 @@ section {
   min-height: 200px;
   align-items: center;
 }
+/* .card-body {
+  z-index: -55 !important;
+} */
+#card1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url('https://images.pexels.com/photos/2767814/pexels-photo-2767814.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center 0;
+}
 
+.card-body {
+  color: white;
+}
 
+#card2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url('https://images.pexels.com/photos/736428/pexels-photo-736428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center 0;
+}
+
+#card3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url('https://images.pexels.com/photos/3038455/pexels-photo-3038455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center 0;
+}
+
+a {
+  color: white !important;
+  text-decoration: none !important;
+}
